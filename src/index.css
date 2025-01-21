@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom Scrollbar Styles */
+
+/* For Webkit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 10px;  /* width of vertical scrollbar */
+    height: 10px; /* height of horizontal scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #2563eb;  /* Changed to blue */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1d4ed8;  /* Darker blue on hover */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #c3d2f1 #f1f1f1;  /* Blue thumb, light track */
+  }
+  
+  /* For IE and Edge */
+  * {
+    -ms-overflow-style: auto;
+  }
